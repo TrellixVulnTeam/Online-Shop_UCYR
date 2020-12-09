@@ -1,0 +1,49 @@
+.sale {
+  &::before {
+    content: 'SALE';
+    padding: 8px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    background-color: $primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.slick-dots {
+  z-index: 100;
+  position: absolute;
+  bottom: 4rem;
+  //   left: 0;
+  //   right: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.slick-dots li {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.slick-active button {
+  background-color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}

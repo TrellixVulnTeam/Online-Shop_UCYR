@@ -1,5 +1,7 @@
 .header {
   max-height: 12rem;
+  @include mb-desktop;
+
   &__nav {
     @include flex-align;
     position: relative;

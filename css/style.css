@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +43,8 @@ a {
   color: inherit; }
 
 .header {
-  max-height: 12rem; }
+  max-height: 12rem;
+  margin-bottom: 8rem; }
   .header__nav {
     display: flex;
     justify-content: space-between;
@@ -175,3 +177,127 @@ a {
 @media (max-width: 370px) {
   .header__logo {
     left: 35%; } }
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .banner__slider {
+    position: relative;
+    max-width: 87rem;
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+  .banner__slide {
+    width: 100%; }
+  .banner__slider-btn {
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    z-index: 5; }
+    .banner__slider-btn--next {
+      right: 10px; }
+    .banner__slider-btn--prev {
+      left: 10px; }
+
+.ads {
+  position: relative;
+  max-width: 26.5rem;
+  margin: 0.5rem;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .ads__top {
+    text-align: right;
+    padding-right: 2.7rem; }
+  .ads__price {
+    margin-top: 4px;
+    color: #1c62cd;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    position: relative; }
+    .ads__price::after {
+      content: '₽';
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 15px;
+      height: 18px; }
+    .ads__price--old {
+      font-size: 14px;
+      line-height: 17px;
+      color: #c4c4c4;
+      position: relative; }
+      .ads__price--old::after {
+        content: '₽';
+        position: absolute;
+        top: 0;
+        right: -15px;
+        width: 8px;
+        height: 10px; }
+  .ads__img {
+    display: block;
+    margin: 0 auto;
+    width: 12.5rem;
+    height: 17.6rem; }
+  .ads__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 7px auto; }
+  .ads__promotext {
+    background-color: #f0f0f4;
+    padding: 25px 0;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center; }
+    .ads__promotext span {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1c62cd; }
+
+.sale::before {
+  content: 'SALE';
+  padding: 8px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  background-color: #1c62cd;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.slick-dots {
+  z-index: 100;
+  position: absolute;
+  bottom: 4rem;
+  display: inline-block;
+  text-align: center; }
+
+.slick-dots li:not(:last-child) {
+  margin-right: 10px; }
+
+.slick-dots button {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent; }
+
+.slick-active button {
+  background-color: #fff; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }

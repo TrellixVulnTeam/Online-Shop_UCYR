@@ -58,3 +58,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin mb-desktop {
+  margin-bottom: 8rem;
+}

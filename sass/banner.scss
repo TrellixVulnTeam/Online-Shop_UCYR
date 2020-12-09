@@ -1,0 +1,111 @@
+.banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__slider {
+    position: relative;
+    max-width: 87rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  &__slide {
+    width: 100%;
+  }
+
+  &__slider-btn {
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    z-index: 5;
+
+    &--next {
+      right: 10px;
+    }
+    &--prev {
+      left: 10px;
+    }
+  }
+}
+
+.ads {
+  position: relative;
+  max-width: 26.5rem;
+  margin: 0.5rem;
+  width: 100%;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__top {
+    text-align: right;
+    padding-right: 2.7rem;
+  }
+
+  &__price {
+    margin-top: 4px;
+    color: $primary;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    position: relative;
+
+    &::after {
+      content: '₽';
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 15px;
+      height: 18px;
+    }
+
+    &--old {
+      font-size: 14px;
+      line-height: 17px;
+      color: #c4c4c4;
+      position: relative;
+      &::after {
+        content: '₽';
+        position: absolute;
+        top: 0;
+        right: -15px;
+        width: 8px;
+        height: 10px;
+      }
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+
+    width: 12.5rem;
+    height: 17.6rem;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 7px auto;
+  }
+
+  &__promotext {
+    background-color: $secondary;
+    padding: 25px 0;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    & span {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: $primary;
+    }
+  }
+}
