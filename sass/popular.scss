@@ -1,0 +1,30 @@
+.popular {
+  @include mb-desktop;
+
+  &__content-item {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+
+  &__list {
+    position: relative;
+  }
+
+  &__slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    &--next {
+      right: -10px;
+    }
+    &--prev {
+      left: -25px;
+    }
+  }
+}

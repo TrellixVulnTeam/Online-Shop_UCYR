@@ -78,3 +78,138 @@
   border: none;
   border-radius: 3px;
 }
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+
+  margin-bottom: 2.5rem;
+}
+.card__not-available.card__not-available--active .card__price {
+  display: none;
+}
+
+.card {
+  position: relative;
+  width: 27rem;
+  height: 43.7rem;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $primary;
+  }
+
+  &:hover .card__hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+    color: #2f3035;
+  }
+
+  &__hover {
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 23rem;
+    transform: translateX(-50%);
+    padding: 18px 22px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    background-color: rgba(#fff, 0.9);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  &__img {
+    margin: 5.2rem auto 1.2rem;
+  }
+
+  &__title {
+    display: inline-block;
+    padding: 0 2rem;
+    margin-bottom: 3.5rem;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__not-available {
+    display: none;
+
+    &--active {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #2f3035;
+
+      & span {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+  }
+}
+.wishlist {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+
+  &--active {
+    background-image: url(../img/heart-active.svg);
+  }
+}
+
+.cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background-color: $primary !important;
+  background-image: url(../img/cart-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 22px;
+
+  border: none;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.card.card__not-available--active .card__price {
+  display: none;
+}
+.card.card__not-available--active .card__not-available {
+  display: block;
+}
