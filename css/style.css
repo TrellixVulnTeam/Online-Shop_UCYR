@@ -607,3 +607,58 @@ a {
     .similar__btn:hover {
       background-color: #1c62cd;
       color: #fff; }
+
+.footer {
+  background-color: #f0f0f4; }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4.3rem 1rem; }
+  .footer__subscribe-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 3.4rem; }
+  .footer__subscribe-input {
+    display: inline-block;
+    border: none;
+    padding: 8px 12px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 17rem;
+    width: 100%; }
+  .footer__subscribe-btn {
+    display: inline-block;
+    margin-top: -3px;
+    margin-left: -5px;
+    padding: 10px 16px;
+    border: none;
+    background-color: #1c62cd;
+    color: #fff;
+    font-size: 11px;
+    line-height: 13px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.12em; }
+  .footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__social-item {
+    margin: 1.5rem; }
+  .footer__item {
+    margin-top: 1rem; }
+    .footer__item--title {
+      font-weight: bold; }
+  .footer__policy {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 2.7rem; }
+  .footer__terms {
+    margin-right: 8rem; }

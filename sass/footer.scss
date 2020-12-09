@@ -1,0 +1,68 @@
+.footer {
+  background-color: $secondary;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4.3rem 1rem;
+  }
+  &__subscribe-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 3.4rem;
+  }
+  &__subscribe-input {
+    display: inline-block;
+    border: none;
+    padding: 8px 12px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 17rem;
+    width: 100%;
+  }
+  &__subscribe-btn {
+    display: inline-block;
+    margin-top: -3px;
+    margin-left: -5px;
+    padding: 10px 16px;
+    border: none;
+    background-color: $primary;
+    color: #fff;
+    font-size: 11px;
+    line-height: 13px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.12em;
+  }
+
+  &__social-list {
+    @include flex-align;
+  }
+  &__social-item {
+    margin: 1.5rem;
+  }
+
+  &__item {
+    margin-top: 1rem;
+
+    &--title {
+      font-weight: bold;
+    }
+  }
+
+  &__policy {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 2.7rem;
+  }
+  &__terms {
+    margin-right: 8rem;
+  }
+}
