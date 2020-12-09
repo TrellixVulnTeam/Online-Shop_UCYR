@@ -153,6 +153,7 @@
 
   &__not-available {
     display: none;
+    color: #2f3035 !important;
 
     &--active {
       display: block;
@@ -160,7 +161,6 @@
       font-size: 18px;
       line-height: 21px;
       text-align: center;
-      color: #2f3035;
 
       & span {
         font-weight: normal;
@@ -207,9 +207,17 @@
   border-radius: 10px 0px 0px 0px;
 }
 
-.card.card__not-available--active .card__price {
+.card.card__not-available--active .card__price,
+.card.card__not-available--active .cart {
   display: none;
 }
 .card.card__not-available--active .card__not-available {
   display: block;
+}
+
+.ad {
+  @include mb-desktop;
+  & img {
+    width: 100%;
+  }
 }
