@@ -1,3 +1,7 @@
+// Colors
+$primary: #1c62cd;
+$secondary: #f0f0f4;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ body {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-size: 1.6rem;
   color: #2f3035;
-  background-color: #f3f3f3;
+  background-color: #fff;
 }
 
 h1,
@@ -32,7 +36,8 @@ p {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 120rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
 }
 
@@ -46,4 +51,10 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@mixin flex-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
