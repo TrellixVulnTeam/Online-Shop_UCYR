@@ -1,0 +1,58 @@
+.categories {
+  @include mb-desktop;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__link {
+    @include flex-align;
+    padding: 2rem 1rem 1.5rem 2rem;
+
+    width: 37rem;
+    // width: 100%;
+    margin: 1rem;
+
+    background: #ffffff;
+    border: 1px solid $secondary;
+
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+      border-radius: 3px;
+      color: $primary;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+  }
+  &__img {
+  }
+
+  &__more {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #c4c4c4;
+    box-sizing: border-box;
+    margin-top: 5rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 70px;
+      background-image: url(../img/icons/more-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 7px;
+      height: 10px;
+    }
+  }
+}
