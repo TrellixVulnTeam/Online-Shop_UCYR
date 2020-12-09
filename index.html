@@ -196,10 +196,54 @@
           </p>
         </div>
       </section>
+
+      <section class="search">
+        <div class="search__wrapper">
+          <div class="search__tabs">
+            <a href="#search-1" class="search__tab search__tab--active"
+              >Поиск по номеру</a
+            >
+            <a href="#search-2" class="search__tab">Поиск по марке</a>
+            <a href="#search-3" class="search__tab">Поиск по названию товара</a>
+          </div>
+          <div class="search__content">
+            <div
+              id="search-1"
+              class="search__content-item search__content-item--active"
+            >
+              <input
+                type="text"
+                class="search__input input"
+                placeholder="Поиск по номеру"
+              />
+              <button class="search__btn btn">искать</button>
+            </div>
+
+            <div id="search-2" class="search__content-item">
+              <input
+                type="text"
+                class="search__input input"
+                placeholder="Поиск по марке"
+              />
+              <button class="search__btn btn">искать</button></div
+            >
+
+            <div id="search-3" class="search__content-item">
+              <input
+                type="text"
+                class="search__input input"
+                placeholder="Поиск по названию товара"
+              />
+              <button class="search__btn btn">искать</button></div
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/my.js"></script>
   </body>
 </html>

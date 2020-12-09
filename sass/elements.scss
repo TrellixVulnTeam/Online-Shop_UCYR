@@ -47,3 +47,34 @@
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
+
+.input {
+  border: none;
+  width: 100%;
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: $secondary;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  &::placeholder {
+    color: #656464;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  padding: 15px 40px;
+
+  background-color: $primary;
+  border: none;
+  border-radius: 3px;
+}

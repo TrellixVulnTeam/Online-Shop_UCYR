@@ -1,0 +1,36 @@
+.search {
+  @include mb-desktop;
+  &__tabs {
+    margin-bottom: 3.7rem;
+  }
+
+  &__tab {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.2;
+    margin-right: 0.4rem;
+    padding: 1.1rem 2.6rem;
+
+    &--active {
+      background-color: $secondary;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      opacity: 1;
+      border-radius: 5px;
+    }
+  }
+
+  &__content-item {
+    display: none;
+
+    &--active {
+      display: flex;
+    }
+  }
+
+  &__btn {
+    margin-left: -3px;
+  }
+}
