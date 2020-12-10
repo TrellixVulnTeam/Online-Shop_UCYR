@@ -1,0 +1,83 @@
+.catalog {
+  &__btn-list {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-item {
+    padding: 4px 22px;
+    margin-right: 8px;
+    background-color: $secondary;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #2f3035;
+    opacity: 0.7;
+
+    border: none;
+    border-radius: 3px;
+
+    &:focus {
+      background-color: $primary;
+      color: #ffffff;
+    }
+  }
+  &__inner {
+    @include mb-desktop;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__aside {
+    min-width: 30rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: 3rem;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4.8rem;
+  }
+
+  &__tab {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #c4c4c4;
+    padding-bottom: 7px;
+    margin-right: 4rem;
+
+    &--active {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #2f3035;
+
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  &__content-item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

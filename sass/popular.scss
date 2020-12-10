@@ -53,6 +53,7 @@
     background-color: $secondary;
     border: none;
     border-radius: 3px;
+    transition: all 0.3s;
 
     &:hover {
       background-color: $primary;

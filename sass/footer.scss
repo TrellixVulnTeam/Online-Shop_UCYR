@@ -42,6 +42,9 @@
   &__social-list {
     @include flex-align;
   }
+  &__info {
+    margin: 0 1.5rem;
+  }
   &__social-item {
     margin: 1.5rem;
   }
