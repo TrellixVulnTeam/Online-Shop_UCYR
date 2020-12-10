@@ -1,8 +1,44 @@
 .catalog {
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
   &__btn-list {
-    margin-bottom: 2rem;
     display: flex;
     align-items: center;
+    margin-right: auto;
+  }
+  &__grid-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 3.4rem;
+  }
+  &__list-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 1rem;
+  }
+
+  &__select {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #c4c4c4;
+    padding: 8px 45px 8px 20px;
+    appearance: none;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 12px;
+      height: 8px;
+      background-image: url(../img/arrow-drop-down.svg);
+      background-repeat: no-repeat;
+      z-index: 10;
+    }
   }
 
   &__btn-item {

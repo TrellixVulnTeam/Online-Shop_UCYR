@@ -715,10 +715,44 @@ a {
   .footer__terms {
     margin-right: 8rem; }
 
-.catalog__btn-list {
-  margin-bottom: 2rem;
+.catalog__buttons {
   display: flex;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem; }
+
+.catalog__btn-list {
+  display: flex;
+  align-items: center;
+  margin-right: auto; }
+
+.catalog__grid-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 3.4rem; }
+
+.catalog__list-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem; }
+
+.catalog__select {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #c4c4c4;
+  padding: 8px 45px 8px 20px;
+  appearance: none;
+  position: relative; }
+  .catalog__select::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 8px;
+    background-image: url(../img/arrow-drop-down.svg);
+    background-repeat: no-repeat;
+    z-index: 10; }
 
 .catalog__btn-item {
   padding: 4px 22px;
