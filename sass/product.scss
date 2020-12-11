@@ -2,6 +2,7 @@
   @include mb-desktop;
 
   &__wrapper {
+    @include mb-desktop;
     @include flex-align;
   }
   &__content-item {
@@ -173,14 +174,77 @@
     padding: 16px 53px;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.12em;
     text-transform: uppercase;
 
-    /* белый */
-
     color: #ffffff;
+  }
+
+  &__info-tabs {
+    height: 7rem;
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info-tab {
+    padding-bottom: 5px;
+    color: #2f3035;
+    opacity: 0.7;
+    &--active {
+      opacity: 1;
+      border-bottom: 2px solid $primary;
+      color: #000;
+    }
+  }
+
+  &__info-item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__top-line {
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  &__search-box {
+    margin-right: 15rem;
+  }
+  &__right-box {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__input {
+    width: 31rem;
+    background-color: $secondary;
+    padding: 9px 17px;
+    border: none;
+    border-radius: 3px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(../img/icons/search.svg);
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__label {
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #2f3035;
+    opacity: 0.7;
+    margin-right: 17px;
   }
 }

@@ -74,4 +74,16 @@ $(function () {
 
     $('.product__content').slick('setPosition');
   });
+
+  $('.product__info-tab').on('click', function (e) {
+    e.preventDefault();
+
+    $('.product__info-tab').removeClass('product__info-tab--active');
+    $('.product__info-item').removeClass('product__info-item--active');
+
+    $(this).addClass('product__info-tab--active');
+    $($(this).attr('href')).addClass('product__info-item--active');
+
+    $('.product__content').slick('setPosition');
+  });
 });

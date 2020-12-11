@@ -284,3 +284,61 @@
     margin-right: 3rem;
   }
 }
+.schedule {
+  width: 100%;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    color: #969696;
+    // opacity: 0.7;
+
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid $secondary;
+
+    &--title {
+      opacity: 1;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2f3035;
+      border-bottom: none;
+    }
+  }
+  &__day-wrapper {
+    max-width: 16rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__day {
+    margin-right: 2rem;
+  }
+  &__data {
+    &:not(:last-child) {
+      display: block;
+      text-align: left;
+      margin-right: auto;
+      width: 15rem;
+    }
+    &--address {
+      max-width: 30rem;
+      width: 100%;
+    }
+
+    &--count {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    background-color: $primary;
+    color: #fff;
+    padding: 10px 40px;
+  }
+}
