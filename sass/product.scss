@@ -1,0 +1,186 @@
+.product {
+  @include mb-desktop;
+
+  &__wrapper {
+    @include flex-align;
+  }
+  &__content-item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+  &__photo {
+    text-align: center;
+    position: relative;
+  }
+  &__img {
+    padding-top: 6rem;
+  }
+
+  &__old-price {
+    margin-top: 1.8rem;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #2f3035;
+    opacity: 0.6;
+  }
+  &__new-price {
+    margin: 1.2rem 0;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #2f3035;
+  }
+
+  &__photo-more {
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #1c62cd;
+  }
+
+  &__info {
+    max-width: 57rem;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+  }
+
+  &__code {
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #2f3035;
+    opacity: 0.6;
+    margin-bottom: 2.2rem;
+  }
+
+  &__rating-box {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+  }
+  &__rating-like {
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+
+    outline: none;
+    margin-right: 2.5rem;
+
+    &--active {
+      background-image: url(../img/heart-active.svg);
+    }
+  }
+
+  &__rating {
+    margin-right: 2.5rem;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &__tab {
+    margin-right: 3rem;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2f3035;
+    padding-bottom: 5px;
+    opacity: 0.6;
+    &--active {
+      opacity: 1;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #2f3035;
+
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  &__table {
+    max-width: 43.6rem;
+    width: 100%;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #2f3035;
+  }
+
+  &__row {
+    margin-top: 1.5rem;
+    display: flex;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #c4c4c4;
+
+    & td {
+      display: inline-block;
+    }
+
+    // &:first-child {
+    //   margin-right: auto;
+    // }
+
+    // &:last-child {
+    //   //   width: 12.3rem;
+    //   //   color: red;
+    // }
+  }
+  &__data {
+    &:first-child {
+      margin-right: auto;
+      //   color: blue;
+    }
+
+    &:last-child {
+      width: 12.3rem;
+      //   color: red;
+    }
+  }
+
+  &__more {
+    display: inline-block;
+    margin-top: 2rem;
+    color: $primary;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $primary;
+  }
+
+  &__btn {
+    display: block;
+    width: 17.7rem;
+    margin-top: 4.5rem;
+    background-color: $primary;
+    padding: 16px 53px;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    /* белый */
+
+    color: #ffffff;
+  }
+}

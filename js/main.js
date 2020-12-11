@@ -63,15 +63,15 @@ $(function () {
       '<button class="similar__slider-btn similar__slider-btn--next"><img src="img/icons/arrow-right-dark.png" alt=""></button>',
   });
 
-  //   $('.catalog__tab').on('click', function (e) {
-  //     e.preventDefault();
+  $('.product__tab').on('click', function (e) {
+    e.preventDefault();
 
-  //     $('.catalog__tab').removeClass('catalog__tab--active');
-  //     $('.catalog__content-item').removeClass('catalog__content-item--active');
+    $('.product__tab').removeClass('product__tab--active');
+    $('.product__content-item').removeClass('product__content-item--active');
 
-  //     $(this).addClass('catalog__tab--active');
-  //     $($(this).attr('href')).addClass('catalog__content-item--active');
+    $(this).addClass('product__tab--active');
+    $($(this).attr('href')).addClass('product__content-item--active');
 
-  //     $('.catalog__content').slick('setPosition');
-  //   });
+    $('.product__content').slick('setPosition');
+  });
 });
