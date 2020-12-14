@@ -151,19 +151,9 @@
     color: #c4c4c4;
     padding: 6px 15px;
     background-color: $secondary;
-
-    &:checked {
-      background-color: $primary;
-      color: #fff;
-    }
-
-    &:disabled {
-      color: #fff;
-      background-color: #2f3035;
-    }
   }
   &__radio-item {
-    display: none;
+    appearance: none;
   }
 
   &__submit {
@@ -229,6 +219,23 @@
   }
 }
 
+.filter__radio-item:checked + .filter__radio-label {
+  background-color: $primary;
+  color: #fff;
+}
+
+.filter__radio-item:disabled + .filter__radio-label {
+  color: #fff;
+  background-color: #2f3035;
+}
 .filter__checkbox:checked + .filter__label::after {
   display: block;
+}
+
+@media (max-width: 610px) {
+  .filter {
+    &__input-box {
+      justify-content: space-around;
+    }
+  }
 }

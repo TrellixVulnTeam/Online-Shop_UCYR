@@ -249,8 +249,10 @@
 
 .breadcrumbs {
   // @include mb-desktop;
+  overflow: scroll;
   margin-bottom: 4rem;
   &__list {
+    min-width: 73rem;
     display: flex;
     align-items: center;
   }

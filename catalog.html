@@ -159,36 +159,43 @@
       <h2 class="title">Гидроциклы</h2>
       <section class="catalog">
         <div class="catalog__buttons">
-          <ul class="catalog__btn-list">
-            <li class="catalog__btn-list"
-              ><button class="catalog__btn-item">Полноприводные</button></li
-            >
-            <li class="catalog__btn-list"
-              ><button class="catalog__btn-item">от 5000</button></li
-            >
-            <li class="catalog__btn-list"
-              ><button class="catalog__btn-item">BRP</button></li
-            >
-            <li class="catalog__btn-list"
-              ><button class="catalog__btn-item">еще</button></li
-            >
-          </ul>
-          <select class="catalog__select" name="" id="">
-            <option value="">По популярности</option>
-            <option value="">По дате добавления</option>
-            <option value="">По убыванию</option>
-            <option value="">По возрастанию</option>
-          </select>
-          <button class="catalog__grid-btn"
-            ><img src="img/filter-icon-grid.svg" alt=""
-          /></button>
-          <button class="catalog__list-btn"
-            ><img src="img/filter-icon-lines.svg" alt=""
-          /></button>
+          <div class="catalog__btns-wrapper">
+            <ul class="catalog__btn-list">
+              <li class="catalog__btn-item"
+                ><button class="catalog__btn-btn">Полноприводные</button></li
+              >
+              <li class="catalog__btn-item"
+                ><button class="catalog__btn-btn">от 5000</button></li
+              >
+              <li class="catalog__btn-item"
+                ><button class="catalog__btn-btn">BRP</button></li
+              >
+              <li class="catalog__btn-item"
+                ><button class="catalog__btn-btn">еще</button></li
+              >
+            </ul>
+          </div>
+          <div class="catalog__select-wrapper">
+            <select class="catalog__select" name="" id="">
+              <option value="">По популярности</option>
+              <option value="">По дате добавления</option>
+              <option value="">По убыванию</option>
+              <option value="">По возрастанию</option>
+            </select>
+            <button class="catalog__grid-btn"
+              ><img src="img/filter-icon-grid.svg" alt=""
+            /></button>
+            <button class="catalog__list-btn"
+              ><img src="img/filter-icon-lines.svg" alt=""
+            /></button>
+          </div>
         </div>
 
         <div class="catalog__inner">
-          <aside class="catalog__aside">
+          <button class="catalog__mob-filter catalog__mob-filter--active"
+            >Фильтр</button
+          >
+          <aside class="catalog__aside catalog__aside--active">
             <div class="catalog__tabs-wrapper">
               <div class="catalog__tabs">
                 <div class="catalog__tab catalog__tab--active"
@@ -360,7 +367,7 @@
                         <ul class="filter__radio-list">
                           <input
                             id="SALE"
-                            type="radio"
+                            type="checkbox"
                             class="filter__radio-item"
                           />
                           <label for="SALE" class="filter__radio-label"
@@ -368,7 +375,7 @@
                           >
                           <input
                             id="NEW"
-                            type="radio"
+                            type="checkbox"
                             class="filter__radio-item"
                           />
                           <label for="NEW" class="filter__radio-label"
@@ -376,7 +383,7 @@
                           >
                           <input
                             id="HIT"
-                            type="radio"
+                            type="checkbox"
                             class="filter__radio-item"
                           />
                           <label for="HIT" class="filter__radio-label"
@@ -384,8 +391,9 @@
                           >
                           <input
                             id="dealer"
-                            type="radio"
+                            type="checkbox"
                             class="filter__radio-item"
+                            disabled
                           />
                           <label for="dealer" class="filter__radio-label"
                             >ДИЛЕР</label
