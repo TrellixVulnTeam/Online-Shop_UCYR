@@ -5,6 +5,15 @@ $(function () {
       '<button class="banner__slider-btn banner__slider-btn--prev"><img src="img/arrow-left.svg" alt=""></button>',
     nextArrow:
       '<button class="banner__slider-btn banner__slider-btn--next"><img src="img/arrow-right.svg" alt=""></button>',
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $('.search__tab').on('click', function (e) {
@@ -38,6 +47,36 @@ $(function () {
       '<button class="popular__slider-btn popular__slider-btn--prev"><img src="img/icons/arrow-left-dark.png" alt=""></button>',
     nextArrow:
       '<button class="popular__slider-btn popular__slider-btn--next"><img src="img/icons/arrow-right-dark.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1130,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 865,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $('.similar__tab').on('click', function (e) {
@@ -61,6 +100,37 @@ $(function () {
       '<button class="similar__slider-btn similar__slider-btn--prev"><img src="img/icons/arrow-left-dark.png" alt=""></button>',
     nextArrow:
       '<button class="similar__slider-btn similar__slider-btn--next"><img src="img/icons/arrow-right-dark.png" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1130,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 865,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $('.product__tab').on('click', function (e) {

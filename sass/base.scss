@@ -61,4 +61,7 @@ a {
 
 @mixin mb-desktop {
   margin-bottom: 8rem;
+  @media (max-width: 600px) {
+    margin-bottom: 4rem;
+  }
 }

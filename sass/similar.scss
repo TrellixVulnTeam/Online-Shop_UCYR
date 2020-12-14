@@ -20,8 +20,13 @@
     }
   }
 
+  &__tab-wrapper {
+    overflow: scroll;
+  }
+
   &__tabs {
     margin-bottom: 3.5rem;
+    min-width: 83rem;
   }
 
   &__slider-btn {

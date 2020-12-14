@@ -57,3 +57,11 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .categories {
+    &__link {
+      width: 31rem;
+    }
+  }
+}

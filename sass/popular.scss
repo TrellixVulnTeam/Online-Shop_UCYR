@@ -7,6 +7,9 @@
       display: block;
     }
   }
+  &__tab-wrapper {
+    overflow: scroll;
+  }
 
   &__list {
     position: relative;
@@ -22,6 +25,7 @@
 
   &__tabs {
     margin-bottom: 3.5rem;
+    min-width: 83rem;
   }
 
   &__slider-btn {
