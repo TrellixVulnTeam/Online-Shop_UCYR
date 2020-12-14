@@ -18,6 +18,7 @@
   }
   &__img {
     padding-top: 6rem;
+    width: 100%;
   }
 
   &__old-price {
@@ -116,6 +117,9 @@
       border-bottom: 2px solid $primary;
     }
   }
+  &__mob-btn {
+    display: none;
+  }
 
   &__table {
     max-width: 43.6rem;
@@ -182,7 +186,7 @@
   }
 
   &__info-tabs {
-    height: 7rem;
+    min-height: 7rem;
     background-color: $secondary;
     display: flex;
     justify-content: space-between;
@@ -222,7 +226,8 @@
     position: relative;
   }
   &__input {
-    width: 31rem;
+    width: 29rem;
+
     background-color: $secondary;
     padding: 9px 17px;
     border: none;
@@ -246,5 +251,89 @@
     color: #2f3035;
     opacity: 0.7;
     margin-right: 17px;
+  }
+}
+
+@media (max-width: 990px) {
+  .product {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__info {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+    &__photo {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+    }
+
+    &__mob-btn {
+      &--active {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        background-color: $primary;
+        padding: 16px 53px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        max-width: 31rem;
+
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  .product {
+    &__info-tabs {
+      flex-direction: column;
+      background-color: #fff;
+      align-items: flex-start;
+    }
+    &__info-tab {
+      margin-top: 3rem;
+    }
+
+    &__top-line {
+      flex-wrap: wrap;
+    }
+
+    &__right-box {
+      margin-top: 4rem;
+    }
+
+    &__input {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    &__label {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .schedule {
+    &__row--title {
+      display: none;
+    }
+
+    &__row {
+      flex-direction: column;
+      // align-items: center;
+    }
+
+    &__data {
+      // margin: 1rem auto;
+      margin-top: 1rem;
+    }
   }
 }

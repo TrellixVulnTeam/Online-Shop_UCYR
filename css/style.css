@@ -817,7 +817,15 @@ a {
   .footer__info {
     margin-right: auto; }
   .footer__info-2 {
-    margin: 2rem auto 2rem 1.5rem; } }
+    margin: 2rem auto 2rem 1.5rem; }
+  .footer__policy {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+  .footer__terms {
+    padding-left: 1rem;
+    margin-bottom: 1rem; }
+  .footer__privacy {
+    padding-left: 1rem; } }
 
 .catalog__aside {
   display: none; }
@@ -1180,7 +1188,8 @@ a {
     text-align: center;
     position: relative; }
   .product__img {
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    width: 100%; }
   .product__old-price {
     margin-top: 1.8rem;
     font-size: 30px;
@@ -1248,6 +1257,8 @@ a {
       line-height: 24px;
       color: #2f3035;
       border-bottom: 2px solid #1c62cd; }
+  .product__mob-btn {
+    display: none; }
   .product__table {
     max-width: 43.6rem;
     width: 100%;
@@ -1285,7 +1296,7 @@ a {
     text-transform: uppercase;
     color: #ffffff; }
   .product__info-tabs {
-    height: 7rem;
+    min-height: 7rem;
     background-color: #f0f0f4;
     display: flex;
     justify-content: space-between;
@@ -1314,7 +1325,7 @@ a {
     justify-content: space-between;
     position: relative; }
   .product__input {
-    width: 31rem;
+    width: 29rem;
     background-color: #f0f0f4;
     padding: 9px 17px;
     border: none;
@@ -1333,3 +1344,52 @@ a {
     color: #2f3035;
     opacity: 0.7;
     margin-right: 17px; }
+
+@media (max-width: 990px) {
+  .product__wrapper {
+    flex-wrap: wrap; }
+  .product__info {
+    display: none; }
+    .product__info--active {
+      display: block; }
+  .product__photo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; }
+  .product__mob-btn--active {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    background-color: #1c62cd;
+    padding: 16px 53px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    max-width: 31rem;
+    color: #ffffff; } }
+
+@media (max-width: 780px) {
+  .product__info-tabs {
+    flex-direction: column;
+    background-color: #fff;
+    align-items: flex-start; }
+  .product__info-tab {
+    margin-top: 3rem; }
+  .product__top-line {
+    flex-wrap: wrap; }
+  .product__right-box {
+    margin-top: 4rem; }
+  .product__input {
+    width: 100%;
+    margin-top: 1rem; }
+  .product__label {
+    margin-bottom: 1.5rem; }
+  .schedule__row--title {
+    display: none; }
+  .schedule__row {
+    flex-direction: column; }
+  .schedule__data {
+    margin-top: 1rem; } }
