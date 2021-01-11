@@ -5,16 +5,18 @@
     @include mb-desktop;
     @include flex-align;
   }
-  &__content-item {
-    display: none;
 
-    &--active {
-      display: block;
-    }
-  }
+  // &__info-wrapper {
+  //   display: none;
+
+  //   &--active {
+  //     display: block;
+  //   }
+
   &__photo {
     text-align: center;
     position: relative;
+    margin-right: 1rem;
   }
   &__img {
     padding-top: 6rem;
@@ -92,11 +94,23 @@
   &__rating {
     margin-right: 2.5rem;
   }
+  &__tabs-wrapper {
+    overflow: scroll;
+  }
 
   &__tabs {
+    min-width: 45rem;
     display: flex;
     align-items: center;
     margin-bottom: 2.5rem;
+    overflow: scroll;
+  }
+
+  &__content-item {
+    display: none;
+    &--active {
+      display: block;
+    }
   }
 
   &__tab {
@@ -105,16 +119,26 @@
     line-height: 24px;
 
     color: #2f3035;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     opacity: 0.6;
+
     &--active {
       opacity: 1;
       font-weight: bold;
       font-size: 20px;
       line-height: 24px;
       color: #2f3035;
+      position: relative;
 
-      border-bottom: 2px solid $primary;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $primary;
+      }
     }
   }
   &__mob-btn {
@@ -122,8 +146,7 @@
   }
 
   &__table {
-    max-width: 43.6rem;
-    width: 100%;
+    width: 43.6rem;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
@@ -256,22 +279,32 @@
 
 @media (max-width: 990px) {
   .product {
-    &__wrapper {
-      flex-wrap: wrap;
+    &__title {
+      display: block;
     }
 
     &__info {
-      display: none;
+      margin: 0 auto;
+      text-align: center;
+      // display: none;
 
       &--active {
         display: block;
+        margin-top: 2rem;
       }
+    }
+    &__wrapper {
+      flex-wrap: wrap;
     }
     &__photo {
       display: block;
       margin: 0 auto;
       text-align: center;
       position: relative;
+    }
+
+    &__btn {
+      margin: 4.5rem auto;
     }
 
     &__mob-btn {
@@ -291,6 +324,9 @@
         color: #ffffff;
       }
     }
+    &__table {
+      width: 100%;
+    }
   }
 }
 @media (max-width: 780px) {
@@ -308,6 +344,10 @@
       flex-wrap: wrap;
     }
 
+    &__info-tab {
+      font-size: 2rem;
+    }
+
     &__right-box {
       margin-top: 4rem;
     }
@@ -319,21 +359,26 @@
     &__label {
       margin-bottom: 1.5rem;
     }
+
+    &__table {
+      font-size: 1.4rem;
+    }
   }
 
   .schedule {
-    &__row--title {
-      display: none;
-    }
+    display: none;
+    // &__row--title {
+    //   display: none;
+    // }
 
-    &__row {
-      flex-direction: column;
-      // align-items: center;
-    }
+    // &__row {
+    //   // flex-direction: column;
+    //   // align-items: center;
+    // }
 
-    &__data {
-      // margin: 1rem auto;
-      margin-top: 1rem;
-    }
+    // &__data {
+    //   // margin: 1rem auto;
+    //   margin-top: 1rem;
+    // }
   }
 }

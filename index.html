@@ -16,9 +16,13 @@
           ><img src="img/icons/hamburger.png" alt="" class="header__mob-img"
         /></button>
         <ul class="header__left-list">
-          <li class="header__left-item">Магазины</li>
-          <li class="header__left-item">Акции</li>
-          <li class="header__left-item">Доставка и оплата</li>
+          <li class="header__left-item"
+            ><a href="index.html" class="">Главная</a></li
+          >
+          <li class="header__left-item"
+            ><a href="/product.html">Карточка Товара</a></li
+          >
+          <li class="header__left-item"><a href="/catalog.html">Каталог</a></li>
         </ul>
         <picture class="header__logo">
           <source srcset="img/logo-mob.png" media="(max-width:600px)" />
@@ -178,6 +182,9 @@
               class="banner__slide-img"
             />
           </div>
+          <button class="banner__slide-btn banner__slide-btn--prev"></button>
+          <button class="banner__slide-btn banner__slide-btn--next"></button>
+          <div class="banner__dots-box"></div>
         </div>
 
         <div class="ads sale">
@@ -325,16 +332,17 @@
               class="popular__content-item popular__content-item--active"
             >
               <ul class="popular__list">
-                <li class="popular__item">
+                <!-- <li class="popular__item">
                   <div class="card card__not-available--active">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
                     <div class="card__img-wrapper">
-                      <img
-                        src="img/content/1813210658_w640_h640_brp-audio-portativnaya-sistema-295100797 1.png"
-                        alt=""
-                        class="card__img"
-                      />
+                      <a href="">
+                        <img
+                          src="img/content/1813210658_w640_h640_brp-audio-portativnaya-sistema-295100797 1.png"
+                          alt=""
+                          class="card__img"
+                      /></a>
                     </div>
 
                     <p class="card__hover">посмотреть товар</p>
@@ -347,7 +355,7 @@
                   </div>
                 </li>
                 <li class="popular__item">
-                  <div class="card sale">
+                  <a href="#" class="card sale  card__not-available--active"">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
                     <div class="card__img-wrapper"
@@ -360,11 +368,11 @@
                     <p class="card__hover">посмотреть товар</p>
                     <h3 class="card__title">Garmin Echomap Plus 62cv</h3>
                     <span class="card__price">43 800 ₽</span>
-                    <p class="card__not-available"
+                    <p class="card__not-available
                       >нет в наличии<br />
                       <span><a href="">Сообщить о поступлении</a></span>
                     </p>
-                  </div>
+                  </a>
                 </li>
                 <li class="popular__item">
                   <div class="card">
@@ -472,7 +480,7 @@
                       </p>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
               <button class="popular__btn">Показать еще</button>
             </div>
@@ -652,7 +660,9 @@
               class="similar__content-item similar__content-item--active"
             >
               <ul class="similar__list">
-                <li class="similar__item">
+                <!--  CARD TEMPLATE -->
+
+                <!-- <li class="similar__item">
                   <div class="card card__not-available--active">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
@@ -671,136 +681,13 @@
                       <span><a href="">Сообщить о поступлении</a></span>
                     </p>
                   </div>
-                </li>
-                <li class="similar__item">
-                  <div class="card sale">
-                    <button class="wishlist"></button>
-                    <button class="cart"></button>
-                    <div class="card__img-wrapper">
-                      <img
-                        src="img/content/1813210658_w640_h640_brp-audio-portativnaya-sistema-295100797 1.png"
-                        alt=""
-                        class="card__img"
-                      />
-                    </div>
-
-                    <p class="card__hover">посмотреть товар</p>
-                    <h3 class="card__title">Спасательное снаряжение</h3>
-                    <span class="card__price">9 800 ₽</span>
-                    <p class="card__not-available"
-                      >нет в наличии<br />
-                      <span><a href="">Сообщить о поступлении</a></span>
-                    </p>
-                  </div>
-                </li>
-                <li class="similar__item">
-                  <div class="card">
-                    <button class="wishlist"></button>
-                    <button class="cart"></button>
-                    <div class="card__img-wrapper"
-                      ><img
-                        src="img/content/pop-2.png"
-                        alt=""
-                        class="card__img"
-                    /></div>
-
-                    <p class="card__hover">посмотреть товар</p>
-                    <h3 class="card__title">Водонепроницаемый Рюкзак</h3>
-                    <span class="card__price">9 800 ₽</span>
-                    <p class="card__not-available"
-                      >нет в наличии<br />
-                      <span><a href="">Сообщить о поступлении</a></span>
-                    </p>
-                  </div>
-                </li>
-                <li class="similar__item">
-                  <div class="card sale">
-                    <button class="wishlist"></button>
-                    <button class="cart"></button>
-                    <div class="card__img-wrapper"
-                      ><img
-                        src="img/content/295100712 1.png"
-                        alt=""
-                        class="card__img"
-                    /></div>
-
-                    <p class="card__hover">посмотреть товар</p>
-                    <h3 class="card__title">Спасательное снаряжение</h3>
-                    <span class="card__price">9 800 ₽</span>
-                    <p class="card__not-available"
-                      >нет в наличии<br />
-                      <span><a href="">Сообщить о поступлении</a></span>
-                    </p>
-                  </div>
-                </li>
-                <li class="similar__item">
-                  <div class="card card__not-available--active">
-                    <button class="wishlist"></button>
-                    <button class="cart"></button>
-                    <div class="card__img-wrapper"
-                      ><img
-                        src="img/content/pop-1.png"
-                        alt=""
-                        class="card__img"
-                    /></div>
-
-                    <p class="card__hover">посмотреть товар</p>
-                    <h3 class="card__title">Спасательное снаряжение</h3>
-                    <span class="card__price">9 800 ₽</span>
-                    <p class="card__not-available"
-                      >нет в наличии<br />
-                      <span><a href="">Сообщить о поступлении</a></span>
-                    </p>
-                  </div>
-                </li>
-                <li class="similar__item">
-                  <div class="card">
-                    <button class="wishlist"></button>
-                    <button class="cart"></button>
-                    <div class="card__img-wrapper"
-                      ><img
-                        src="img/content/pop-2.png"
-                        alt=""
-                        class="card__img"
-                    /></div>
-
-                    <p class="card__hover">посмотреть товар</p>
-                    <h3 class="card__title">Водонепроницаемый Рюкзак</h3>
-                    <span class="card__price">9 800 ₽</span>
-                    <p class="card__not-available"
-                      >нет в наличии<br />
-                      <span><a href="">Сообщить о поступлении</a></span>
-                    </p>
-                  </div>
-                </li>
-                <li class="similar__item">
-                  <div class="card__wrapper">
-                    <div class="card sale">
-                      <button class="wishlist"></button>
-                      <button class="cart"></button>
-                      <div class="card__img-wrapper"
-                        ><img
-                          src="img/content/pop-3.png"
-                          alt=""
-                          class="card__img"
-                      /></div>
-
-                      <p class="card__hover">посмотреть товар</p>
-                      <h3 class="card__title">Спасательное снаряжение</h3>
-                      <span class="card__price">9 800 ₽</span>
-                      <p class="card__not-available"
-                        >нет в наличии<br />
-                        <span><a href="">Сообщить о поступлении</a></span>
-                      </p>
-                    </div>
-                  </div>
-                </li>
+                </li>-->
               </ul>
             </div>
             <div id="sim-2" class="similar__content-item"
               ><ul class="similar__list">
-                <li class="similar__item">
-                  <div class="card card__not-available--active">
+                <!-- <li class="similar__item">
+                  <a href="#" class="card card__not-available--active">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
                     <div class="card__img-wrapper"
@@ -817,10 +704,10 @@
                       >нет в наличии<br />
                       <span><a href="">Сообщить о поступлении</a></span>
                     </p>
-                  </div>
+                  </a>
                 </li>
                 <li class="similar__item">
-                  <div class="card sale">
+                  <a href="#" class="card sale">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
                     <div class="card__img-wrapper"
@@ -837,7 +724,7 @@
                       >нет в наличии<br />
                       <span><a href="">Сообщить о поступлении</a></span>
                     </p>
-                  </div>
+                  </a>
                 </li>
                 <li class="similar__item">
                   <div class="card">
@@ -900,7 +787,7 @@
                   </div>
                 </li>
                 <li class="similar__item">
-                  <div class="card">
+                  <a href="#" class="card">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
                     <div class="card__img-wrapper"
@@ -917,7 +804,7 @@
                       >нет в наличии<br />
                       <span><a href="">Сообщить о поступлении</a></span>
                     </p>
-                  </div>
+                  </a>
                 </li>
                 <li class="similar__item">
                   <div class="card__wrapper">
@@ -940,7 +827,8 @@
                       </p>
                     </div>
                   </div>
-                </li>
+                </li> -->
+                similar content 2
               </ul>
             </div>
             <div id="sim-3" class="similar__content-item">content - 3 </div>
@@ -959,12 +847,14 @@
             >Подпишитесь на нашу рассылку <br />
             и узнавайте о акция быстрее</h4
           >
-          <input
-            class="footer__subscribe-input"
-            type="email"
-            placeholder="Введите ваш e-mail:"
-          />
-          <button class="footer__subscribe-btn">Отправить</button>
+          <form action="" class="footer__form">
+            <input
+              class="footer__subscribe-input"
+              type="email"
+              placeholder="Введите ваш e-mail:"
+            />
+            <button class="footer__subscribe-btn">Отправить</button>
+          </form>
         </div>
         <div class="footer__info">
           <ul class="footer__list">
@@ -1018,19 +908,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/my.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
 
 <!-- Card Template -->
 
-<!-- <div class="card">
+<!-- 
+  <div class="card">
   <button class="wishlist"></button>
   <button class="cart"></button>
-  <img src="" alt="" class="card__img" />
+  <a href="" class="">
+    <img src="" alt="" class="card__img" />
+  </a>
   <p class="card__hover"></p>
-  <h3 class="card__title"></h3>
-  <span class="card__price"></span>
+  <h3 class="card__title"><a href=""></a></h3>
+  <span class="card__price">₽</span>
   <p class="card__not-available"
     >нет в наличии<br />
     <span><a href="">Сообщить о поступлении</a></span>

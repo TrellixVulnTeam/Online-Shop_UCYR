@@ -161,9 +161,8 @@
     }
 
     &__mob-filter {
-      display: none;
+      display: block;
       &--active {
-        display: block;
         background-color: $primary;
         color: #fff;
         font-family: inherit;

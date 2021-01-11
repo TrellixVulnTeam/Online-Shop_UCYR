@@ -16,9 +16,13 @@
           ><img src="img/icons/hamburger.png" alt="" class="header__mob-img"
         /></button>
         <ul class="header__left-list">
-          <li class="header__left-item">Магазины</li>
-          <li class="header__left-item">Акции</li>
-          <li class="header__left-item">Доставка и оплата</li>
+          <li class="header__left-item"
+            ><a href="index.html" class="">Главная</a></li
+          >
+          <li class="header__left-item"
+            ><a href="/product.html">Карточка Товара</a></li
+          >
+          <li class="header__left-item"><a href="/catalog.html">Каталог</a></li>
         </ul>
         <picture class="header__logo">
           <source srcset="img/logo-mob.png" media="(max-width:600px)" />
@@ -153,10 +157,14 @@
           <li class="breadcrumbs__item">
             <a href="" class="breadcrumbs__link">Главная</a>
           </li>
-          <li class="breadcrumbs__item"> Гидроциклы</li>
-          <li class="breadcrumbs__item">
-            Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</li
+          <li class="breadcrumbs__item"
+            ><a href="" class="breadcrumbs__link">Гидроциклы</a></li
           >
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link"
+              >Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</a
+            >
+          </li>
         </ul>
       </div>
       <div class="product">
@@ -173,7 +181,7 @@
               >Нашли дешевле? Снизим цену!</span
             >
           </div>
-          <div class="product__info">
+          <div class="product__info product__info--active">
             <h2 class="product__title">
               Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
             </h2>
@@ -181,14 +189,16 @@
             <div class="product__rating-box">
               <button class="product__rating-like"></button>
               <img class="product__rating" src="img/icons/rating.svg" alt="" />
-              *star rating*
             </div>
-            <div class="product__tabs">
-              <a href="#char" class="product__tab product__tab--active"
-                >Характеристики</a
-              >
-              <a href="#av" class="product__tab">Наличие в магазине</a>
+            <div class="product__tabs-wrapper">
+              <div class="product__tabs">
+                <a href="#char" class="product__tab product__tab--active"
+                  >Характеристики</a
+                >
+                <a href="#av" class="product__tab">Наличие в магазине</a>
+              </div>
             </div>
+
             <div class="product__content">
               <div
                 id="char"
@@ -223,7 +233,6 @@
             </div>
           </div>
         </section>
-        <div class="product__mob-btn product__mob-btn--active">Подробнее</div>
         <section class="product__schedule">
           <ul class="product__info-tabs">
             <li href="#info-1" class="product__info-tab">О товаре</li>
@@ -255,7 +264,7 @@
                   <input
                     id="today"
                     name="deliv"
-                    type="checkbox"
+                    type="radio"
                     class="filter__checkbox"
                   />
                   <label for="today" class="filter__label"
@@ -264,7 +273,7 @@
                   <input
                     id="week"
                     name="deliv"
-                    type="checkbox"
+                    type="radio"
                     class="filter__checkbox"
                   />
                   <label for="week" class="filter__label"
@@ -398,7 +407,7 @@
               class="similar__content-item similar__content-item--active"
             >
               <ul class="similar__list">
-                <li class="similar__item">
+                <!-- <li class="similar__item">
                   <div class="card card__not-available--active">
                     <button class="wishlist"></button>
                     <button class="cart"></button>
@@ -540,7 +549,7 @@
                       </p>
                     </div>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div id="sim-2" class="similar__content-item"
@@ -704,12 +713,14 @@
             >Подпишитесь на нашу рассылку <br />
             и узнавайте о акция быстрее</h4
           >
-          <input
-            class="footer__subscribe-input"
-            type="email"
-            placeholder="Введите ваш e-mail:"
-          />
-          <button class="footer__subscribe-btn">Отправить</button>
+          <form action="" class="footer__form">
+            <input
+              class="footer__subscribe-input"
+              type="email"
+              placeholder="Введите ваш e-mail:"
+            />
+            <button class="footer__subscribe-btn">Отправить</button>
+          </form>
         </div>
         <div class="footer__info">
           <ul class="footer__list">
@@ -763,6 +774,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/my.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>

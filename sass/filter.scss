@@ -6,9 +6,9 @@
     line-height: 19px;
 
     color: #2f3035;
-    margin-bottom: 1.5rem;
     padding-left: 2.6rem;
     position: relative;
+    transition: all 0.3s;
 
     &::before {
       content: '';
@@ -22,17 +22,31 @@
     }
   }
 
-  &__list {
-    padding-right: 1rem;
+  &__title-input {
+    display: none;
   }
-  &__item {
-    margin-bottom: 2.5rem;
-  }
+
   &__input-box {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    height: 0;
+    overflow: hidden;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  &__list {
+    padding-right: 1rem;
+  }
+
+  &__item {
+    &:nth-child(6) {
+      margin-top: 2.3rem;
+    }
   }
 
   &__label {
@@ -91,6 +105,19 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #c4c4c4;
+    margin-bottom: 1rem;
+
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 13px;
+      right: 47px;
+      width: 12px;
+      height: 8px;
+      background-image: url(../img/arrow-drop-up.svg);
+      background-repeat: no-repeat;
+    }
   }
 
   &__select {
@@ -142,7 +169,7 @@
     @include flex-align;
   }
   &__radio-label {
-    appearance: none;
+    display: inline-block;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
@@ -152,9 +179,15 @@
     padding: 6px 15px;
     background-color: $secondary;
   }
-  &__radio-item {
+
+  &__radio-input {
     appearance: none;
   }
+  // &__radio-box {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
 
   &__submit {
     display: block;
@@ -182,10 +215,10 @@
   }
   &__additional {
     text-align: center;
+    margin-top: 1.5rem;
   }
 
   &__add-title {
-    margin-top: 1.5rem;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
@@ -198,7 +231,7 @@
       content: '';
       position: absolute;
       top: 6px;
-      right: 40px;
+      right: 0px;
       width: 12px;
       height: 8px;
       background-image: url(../img/arrow-drop-down.svg);
@@ -208,6 +241,7 @@
 
   &__rest {
     display: inline-block;
+    margin: 0 auto;
     margin-top: 1.5rem;
     padding-bottom: 2px;
 
@@ -219,12 +253,20 @@
   }
 }
 
-.filter__radio-item:checked + .filter__radio-label {
+.filter__title-input:checked ~ .filter__input-box {
+  height: 100%;
+}
+
+.filter__title-input:checked ~ .filter__title::before {
+  transform: rotate(180deg);
+}
+
+.filter__radio-input:checked + .filter__radio-label {
   background-color: $primary;
   color: #fff;
 }
 
-.filter__radio-item:disabled + .filter__radio-label {
+.filter__radio-input:disabled + .filter__radio-label {
   color: #fff;
   background-color: #2f3035;
 }

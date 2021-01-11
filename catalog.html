@@ -16,9 +16,13 @@
           ><img src="img/icons/hamburger.png" alt="" class="header__mob-img"
         /></button>
         <ul class="header__left-list">
-          <li class="header__left-item">Магазины</li>
-          <li class="header__left-item">Акции</li>
-          <li class="header__left-item">Доставка и оплата</li>
+          <li class="header__left-item"
+            ><a href="index.html" class="">Главная</a></li
+          >
+          <li class="header__left-item"
+            ><a href="/product.html">Карточка Товара</a></li
+          >
+          <li class="header__left-item"><a href="/catalog.html">Каталог</a></li>
         </ul>
         <picture class="header__logo">
           <source srcset="img/logo-mob.png" media="(max-width:600px)" />
@@ -198,10 +202,10 @@
           <aside class="catalog__aside catalog__aside--active">
             <div class="catalog__tabs-wrapper">
               <div class="catalog__tabs">
-                <div class="catalog__tab catalog__tab--active"
-                  ><p href="#filter-1">Параметры</p></div
+                <div href="#filter-1" class="catalog__tab catalog__tab--active"
+                  >Параметры</div
                 >
-                <div class="catalog__tab"><p href="#filter-2">по марке</p></div>
+                <div href="#filter-2" class="catalog__tab">по марке</div>
               </div>
               <div class="catalog__content">
                 <div
@@ -210,7 +214,13 @@
                 >
                   <ul class="filter__list">
                     <li class="filter__item">
-                      <h4 class="filter__title">Наличие</h4>
+                      <input
+                        id="naliche"
+                        type="checkbox"
+                        class="filter__title-input"
+                        checked
+                      />
+                      <label for="naliche" class="filter__title">Наличие</label>
                       <div class="filter__input-box">
                         <input
                           class="filter__checkbox"
@@ -231,7 +241,13 @@
                       </div>
                     </li>
                     <li class="filter__item">
-                      <h4 class="filter__title">Новинки</h4>
+                      <input
+                        id="novinki"
+                        type="checkbox"
+                        class="filter__title-input"
+                        checked
+                      />
+                      <label for="novinki" class="filter__title">Новинки</label>
                       <div class="filter__input-box">
                         <input
                           class="filter__checkbox"
@@ -260,7 +276,7 @@
 
                     <li class="filter__item">
                       <div class="filter__select-box">
-                        <h4 class="filter__title">Мощность, л.с.</h4>
+                        <h4 class="filter__title-power">Мощность, л.с.</h4>
                         <select name="" id="" class="filter__select">
                           <option value="" class="filter__option">100</option>
                           <option value="" class="filter__option">120</option>
@@ -271,7 +287,9 @@
                     </li>
                     <li class="filter__item">
                       <div class="filter__select-box">
-                        <h4 class="filter__title">Мощность двигателя, л.с.</h4>
+                        <h4 class="filter__title-power"
+                          >Мощность двигателя, л.с.</h4
+                        >
                         <select name="" id="" class="filter__select">
                           <option value="" class="filter__option">300</option>
                           <option value="" class="filter__option">420</option>
@@ -282,7 +300,7 @@
                     </li>
                     <li class="filter__item">
                       <div class="filter__select-box">
-                        <h4 class="filter__title">Макс. скорость</h4>
+                        <h4 class="filter__title-power">Макс. скорость</h4>
                         <select name="" id="" class="filter__select">
                           <option value="" class="filter__option">140</option>
                           <option value="" class="filter__option">170</option>
@@ -292,7 +310,14 @@
                       </div>
                     </li>
                     <li class="filter__item">
-                      <h4 class="filter__title">Бренд</h4>
+                      <input
+                        id="brend"
+                        type="checkbox"
+                        class="filter__title-input"
+                        checked
+                      />
+                      <label for="brend" class="filter__title">Бренд</label>
+
                       <div class="filter__input-box">
                         <input
                           class="filter__checkbox"
@@ -319,13 +344,19 @@
                       </div>
                     </li>
                     <li class="filter__item">
-                      <h4 class="filter__title">Модель</h4>
                       <input
-                        class="filter__input"
-                        type="text"
-                        placeholder="Введите модель"
+                        id="model"
+                        type="checkbox"
+                        class="filter__title-input"
+                        checked
                       />
+                      <label for="model" class="filter__title">Модель</label>
                       <div class="filter__input-box">
+                        <input
+                          class="filter__input"
+                          type="text"
+                          placeholder="Введите модель"
+                        />
                         <input
                           class="filter__checkbox"
                           type="checkbox"
@@ -358,51 +389,73 @@
                         <label class="filter__label" for="model-4"
                           >SeaDoo GTR 230
                         </label>
-                      </div>
-                      <a href="" class="filter__more">Показать еще</a>
-                    </li>
-                    <li class="filter__item">
-                      <h4 class="filter__title">Акции</h4>
-                      <div class="filter__radio-box">
-                        <ul class="filter__radio-list">
-                          <input
-                            id="SALE"
-                            type="checkbox"
-                            class="filter__radio-item"
-                          />
-                          <label for="SALE" class="filter__radio-label"
-                            >SALE</label
-                          >
-                          <input
-                            id="NEW"
-                            type="checkbox"
-                            class="filter__radio-item"
-                          />
-                          <label for="NEW" class="filter__radio-label"
-                            >NEW</label
-                          >
-                          <input
-                            id="HIT"
-                            type="checkbox"
-                            class="filter__radio-item"
-                          />
-                          <label for="HIT" class="filter__radio-label"
-                            >HIT</label
-                          >
-                          <input
-                            id="dealer"
-                            type="checkbox"
-                            class="filter__radio-item"
-                            disabled
-                          />
-                          <label for="dealer" class="filter__radio-label"
-                            >ДИЛЕР</label
-                          >
-                        </ul>
+                        <a href="" class="filter__more">Показать еще</a>
                       </div>
                     </li>
                     <li class="filter__item">
-                      <h4 class="filter__title">Страны</h4>
+                      <input
+                        id="actcii"
+                        type="checkbox"
+                        class="filter__title-input"
+                        checked
+                      />
+                      <label for="actcii" class="filter__title">Акции</label>
+                      <div class="filter__input-box">
+                        <div class="filter__radio-box">
+                          <ul class="filter__radio-list">
+                            <li class="filter__radio-item"
+                              ><input
+                                id="SALE"
+                                type="checkbox"
+                                class="filter__radio-input"
+                              />
+                              <label for="SALE" class="filter__radio-label"
+                                >SALE</label
+                              ></li
+                            >
+                            <li class="filter__radio-item">
+                              <input
+                                id="NEW"
+                                type="checkbox"
+                                class="filter__radio-input"
+                              />
+                              <label for="NEW" class="filter__radio-label"
+                                >NEW</label
+                              ></li
+                            >
+                            <li class="filter__radio-item">
+                              <input
+                                id="HIT"
+                                type="checkbox"
+                                class="filter__radio-input"
+                              />
+                              <label for="HIT" class="filter__radio-label"
+                                >HIT</label
+                              ></li
+                            >
+                            <li class="filter__radio-item">
+                              <input
+                                id="dealer"
+                                type="checkbox"
+                                class="filter__radio-input"
+                                disabled
+                              />
+                              <label for="dealer" class="filter__radio-label"
+                                >ДИЛЕР</label
+                              >
+                            </li></ul
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li class="filter__item">
+                      <input
+                        id="strani"
+                        type="checkbox"
+                        class="filter__title-input"
+                        checked
+                      />
+                      <label for="strani" class="filter__title">Страны</label>
                       <div class="filter__input-box">
                         <input
                           class="filter__checkbox"
@@ -444,14 +497,23 @@
                           for="usa"
                           >CША
                         </label>
+                        <a href="" class="filter__more">Показать еще</a>
                       </div>
-                      <a href="" class="filter__more">Показать еще</a>
                     </li>
                   </ul>
                   <button class="filter__submit">ВЫБРАТЬ</button>
                   <div class="filter__additional">
-                    <h4 class="filter__add-title">Дополнительные параметры</h4>
-                    <a href="" class="filter__rest">Сбросить фильтр</a>
+                    <input
+                      id="eshe"
+                      type="checkbox"
+                      class="filter__title-input"
+                    />
+                    <label for="eshe" class="filter__add-title"
+                      >Дополнительные параметры</label
+                    >
+                    <div class="filter__input-box">
+                      <a href="" class="filter__rest">Сбросить фильтр</a>
+                    </div>
                   </div>
                 </div>
                 <div id="filter-2" class="catalog__content-item">
@@ -462,7 +524,7 @@
           </aside>
           <div class="catalog__products">
             <ul class="catalog__list">
-              <li class="catalog__item">
+              <!-- <li class="catalog__item">
                 <div class="card">
                   <button class="wishlist"></button>
                   <button class="cart"></button>
@@ -701,14 +763,12 @@
                     <span><a href="">Сообщить о поступлении</a></span>
                   </p>
                 </div>
-              </li>
+              </li> -->
             </ul>
             <div class="pagination">
               <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a href="" class="pagination__page pagination__page--active"
-                    >1</a
-                  >
+                <li class="pagination__item pagination__item--active">
+                  <a href="" class="pagination__page">1</a>
                 </li>
                 <li class="pagination__item">
                   <a href="" class="pagination__page">2</a>
@@ -737,12 +797,14 @@
             >Подпишитесь на нашу рассылку <br />
             и узнавайте о акция быстрее</h4
           >
-          <input
-            class="footer__subscribe-input"
-            type="email"
-            placeholder="Введите ваш e-mail:"
-          />
-          <button class="footer__subscribe-btn">Отправить</button>
+          <form action="" class="footer__form">
+            <input
+              class="footer__subscribe-input"
+              type="email"
+              placeholder="Введите ваш e-mail:"
+            />
+            <button class="footer__subscribe-btn">Отправить</button>
+          </form>
         </div>
         <div class="footer__info">
           <ul class="footer__list">
@@ -796,6 +858,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/my.js"></script>
+    <script src="js/catalog.js"></script>
   </body>
 </html>
