@@ -232,6 +232,14 @@ card.forEach((el, i) => {
   });
 });
 
+const github = document.querySelector('.github');
+const readme = document.querySelector('.readme');
+
+window.addEventListener('scroll', () => {
+  github.classList.toggle('github--active', window.scrollY > 200);
+  // readme.classList.toggle('readme--active', window.scrollY > 200);
+});
+
 /* <div class="card sale">
   <button class="wishlist"></button>
   <button class="cart"></button>

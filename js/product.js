@@ -86,6 +86,7 @@ similarArr.forEach((el) => addNewCard(el, similarList));
 const card = document.querySelectorAll('.card');
 const wishlist = document.querySelectorAll('.wishlist');
 
+// wishlist
 card.forEach((el, i) => {
   el.addEventListener('click', function (e) {
     e.preventDefault();
@@ -93,4 +94,13 @@ card.forEach((el, i) => {
       wishlist[i].classList.toggle('wishlist--active');
     }
   });
+});
+
+//  Scroll & read me
+const github = document.querySelector('.github');
+const readme = document.querySelector('.readme');
+
+window.addEventListener('scroll', () => {
+  github.classList.toggle('github--active', window.scrollY > 200);
+  // readme.classList.toggle('readme--active', window.scrollY > 200);
 });
